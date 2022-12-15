@@ -24,7 +24,7 @@ from PIL import Image
 warnings.filterwarnings('ignore')
 
 st.markdown("<h1 style='text-align: center; color: white; font-size: 60px;'>Youtube Content Creation Recommendation Platform</h1>", unsafe_allow_html=True)
-code=['Brazil','Canada','France','UK','India','Japan','US','None']
+code=['Brazil','Canada','France','UK','India','Japan','Canada','US','None']
 country_= st.radio("Choose country",code, index=7)
 
 if country_ =='Brazil':
@@ -39,6 +39,8 @@ elif country_ == 'India':
     country='IN'
 elif country_ == 'Japan':
     country='JP'
+elif country_ == 'Canada':
+    country='CA'
 elif country_ == 'US':
     country='US'
 else:
